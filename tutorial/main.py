@@ -3,9 +3,11 @@ from kivy.uix.floatlayout import FloatLayout
 
 
 class Interface(FloatLayout):
-    pass
+    def printing_msg(self):
+        print("Hello World!")
 
 class FirstApp(App):
-    pass
+    def printing_msg(self):
+        print("Hello World!")
 
 FirstApp().run()
