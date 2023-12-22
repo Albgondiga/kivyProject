@@ -1,6 +1,8 @@
 from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.label import Label
+from kivy.uix.textinput import TextInput
 
 
 class Interface(FloatLayout):
@@ -15,6 +17,12 @@ class Interface(FloatLayout):
         #print(obj.size)
 
 class FirstApp(App):
-    pass
+    def build(self):
+        layout=FloatLayout()
+        label=Label(text="Hello World!", font_size='32sp', color=(0.5,0.5,1,1))
+        textInput=TextInput(size_hint=(0.3,0.3), pos=(200,400))
+        layout.add_widget(textInput)
+        layout.add_widget(label)
+        return layout
 
 FirstApp().run()
