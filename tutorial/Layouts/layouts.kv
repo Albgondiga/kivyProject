@@ -1,11 +1,37 @@
+#: import BgBoxLayout Custom_Layouts
 Interface:
+    hex_code:"#1E45F3"
+    alpha:0.2  #opacity
     orientation: "vertical"
     padding: [20,20,20,20]
     spacing: 20
-    Button:
-        text: "1"
-        # Relative to the previously assigned percentage, unless all buttons are modified
-        #size_hint:1,0.3
-    Button:
-        text: "2"
-        #size_hint:1,0.7
+    BgBoxLayout:
+        hex_code:"#1E45F3"
+        alpha:0.2
+        padding: [20,20,20,20]
+        spacing: 20
+        size_hint:1,0.3
+        Button:
+            text: "1"
+        Button:
+            text: "2"
+    BgBoxLayout:
+        orientation: "vertical"
+        hex_code:"#1E45F3"
+        alpha:0.2
+        padding: [20,20,20,20]
+        spacing: 20
+        size_hint:1,0.5
+        Button:
+            text: "1"
+        Button:
+            text: "2"
+        Button:
+            text: "3"
+    BgBoxLayout:
+        orientation: "vertical"
+        hex_code:"#1E45F3"
+        alpha:0.2
+        padding: [20,20,20,20]
+        spacing: 20
+        size_hint:1,0.2
